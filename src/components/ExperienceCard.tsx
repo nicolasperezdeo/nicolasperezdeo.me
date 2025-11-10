@@ -12,7 +12,7 @@ interface ExperienceCardProps {
 export function ExperienceCard({ role, company, location, period, highlights, index }: ExperienceCardProps) {
   return (
     <motion.article
-      className="rounded-3xl border border-slate-800/60 bg-slate-900/40 p-8 shadow-lg shadow-slate-950/50 backdrop-blur"
+      className="glass rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(56,189,248,0.1)]"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.08 }}

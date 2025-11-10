@@ -45,11 +45,6 @@ export function Hero() {
               label="GitHub"
               icon={<FaGithub className="h-5 w-5" />}
             />
-            <ContactLink
-              href={`tel:${profile.phone.replace(/\s+/g, '')}`}
-              label="Schedule a call"
-              icon={<HiPhone className="h-5 w-5" />}
-            />
           </div>
         </motion.div>
         <motion.div

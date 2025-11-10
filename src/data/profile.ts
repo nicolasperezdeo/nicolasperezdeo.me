@@ -1,64 +1,67 @@
 export const profile = {
   name: 'Nicolas Perez de Olaguer',
-  title: 'Machine Learning Engineer',
-  subtitle: 'MLOps • Computer Vision • Healthcare AI',
+  title: 'Senior Machine Learning Engineer',
+  subtitle: 'Applied AI • MLOps • Generative AI',
   location: 'Berlin, Germany',
-  phone: '+34 662 169 554',
   email: 'nicolasperezdeo@gmail.com',
   linkedin: 'https://linkedin.com/in/nicolasperezdeolaguer',
-  github: 'https://github.com/your-profile',
+  github: 'https://github.com/nicolasperezdeo',
   summary:
-    'Results-driven Machine Learning Engineer with 5+ years of experience architecting and deploying end-to-end computer vision systems in regulated medical environments. Passionate about building reliable ML platforms, advancing clinical diagnostics, and bridging research into production.',
-  keywords: ['ML Engineering', 'MLOps', 'Computer Vision', 'Medical AI', 'Cloud Architecture']
+    'Senior Machine Learning Engineer with over five years of experience designing, deploying, and maintaining production-grade AI systems. Skilled in building scalable LLM and ML pipelines on AWS using Docker, Terraform, and MLflow. Currently focused on applied Generative AI and MLOps, integrating language and vision models into business workflows to deliver measurable value.',
+  keywords: [
+    'MLOps',
+    'Generative AI',
+    'LLM Pipelines',
+    'Applied AI',
+    'Computer Vision',
+    'Cloud Architecture',
+    'Model Deployment'
+  ]
 };
 
 export const skills = [
   {
-    category: 'Programming & Libraries',
-    items: ['Python', 'Pandas', 'NumPy', 'Scikit-learn']
+    category: 'Languages',
+    items: ['Python', 'SQL', 'Bash']
   },
   {
     category: 'ML/DL Frameworks',
-    items: ['TensorFlow', 'Keras', 'PyTorch']
+    items: ['PyTorch', 'TensorFlow', 'Scikit-learn']
   },
   {
-    category: 'MLOps & Cloud',
-    items: ['AWS (SageMaker, S3, EC2, CloudWatch)', 'Docker', 'MLflow', 'CI/CD', 'Terraform']
+    category: 'MLOps & Infrastructure',
+    items: ['Docker', 'Terraform', 'MLflow', 'CI/CD', 'Model Monitoring']
   },
   {
-    category: 'Data & Databases',
-    items: ['Data Pipelines', 'ETL', 'SQL']
+    category: 'Cloud & Services',
+    items: ['AWS (SageMaker, Bedrock, EC2, Lambda, CloudWatch)']
   },
   {
-    category: 'Core Competencies',
-    items: ['Computer Vision', 'Model Deployment & Monitoring', 'Data Governance', 'Scalable Systems']
+    category: 'Focus Areas',
+    items: ['LLM Pipelines', 'NLP', 'Multimodal AI', 'Data Processing', 'Cloud Deployment']
   }
 ];
 
 export const experiences = [
   {
-    role: 'Machine Learning Lead',
+    role: 'Machine Learning (Project Lead)',
     company: 'TeleMedC',
     location: 'Berlin / Hamburg',
-    period: 'May 2023 — Dec 2024',
+    period: 'May 2023 — Jan 2025',
     highlights: [
-      'Overhauled ML training infrastructure with MLflow-based experiment tracking and data versioning on AWS, achieving full reproducibility and auditability.',
-      'Scaled nationwide ML inference services for GP clinics with high availability and resilient performance under heavy clinical workloads.',
-      'Established proactive model monitoring with AWS CloudWatch to detect data and concept drift, safeguarding deployed model accuracy.',
-      'Cut inference latency by ~40% through model quantization and infrastructure optimization to enable near real-time clinical decision support.',
-      'Optimized data processing and training pipelines to reduce cloud spend by ~20% while improving model performance.'
+      'Led design and deployment of a scalable ML platform on AWS using Docker, MLflow, and Terraform.',
+      'Oversaw data workflows and production model rollouts across distributed teams, ensuring reliability and version control.',
+      'Mentored junior engineers and set standards for code quality, CI/CD, and experiment tracking.'
     ]
   },
   {
     role: 'Machine Learning Engineer',
     company: 'TeleMedC',
-    location: 'Berlin / Hamburg',
+    location: 'Hamburg',
     period: 'May 2021 — Apr 2023',
     highlights: [
-      'Built and productionized a CNN-based cataract grading system that surpassed senior ophthalmologist benchmarks by 12%.',
-      'Delivered the core ML technology that enabled TeleMedC’s entry into the German market across optic shops and GP clinics.',
-      'Created a proprietary 10k-image clinical dataset with rigorous collection and annotation workflows for nurses and doctors.',
-      'Applied targeted augmentation strategies that enabled robust model generalization across real-world imaging conditions.'
+      'Developed and deployed CNN-based image analysis systems with automated retraining pipelines on AWS SageMaker.',
+      'Built reproducible data ingestion, validation, and evaluation processes serving 10k+ samples.'
     ]
   },
   {
@@ -67,9 +70,20 @@ export const experiences = [
     location: 'Berlin',
     period: 'May 2019 — Aug 2020',
     highlights: [
-      'Designed a 3D anatomical landmark extraction model using heatmap regression and synthetic data to bootstrap scarce labels.',
-      'Integrated the model into 2D/3D reconstruction pipelines, accelerating the flagship product’s initialization workflow.',
-      'Reduced end-to-end reconstruction processing time by 20%, delivering substantial throughput gains for clinical users.'
+      'Built 3D image analysis models for anatomical landmark detection and integrated them into SaaS workflows.'
+    ]
+  }
+];
+
+export const projects = [
+  {
+    name: 'PriceCogs — Record Valuation & Identification Toolkit',
+    description:
+      'End-to-end AI toolkit combining computer vision and LLMs for vinyl record identification and pricing.',
+    highlights: [
+      'Pipeline: OCR → LLM parsing (Gemini Pro / OpenAI) → retrieval & ranking → valuation engine.',
+      'Engineering: Modular FastAPI backend, CLI, and Material Design web demo for containerized deployment.',
+      'Stack: Python, FastAPI, OpenCV, pytesseract, OpenAI / Gemini API, AWS, Docker.'
     ]
   }
 ];
@@ -81,7 +95,7 @@ export const education = [
     period: '2017 — 2019'
   },
   {
-    degree: 'Bachelor of Telematics Engineering',
+    degree: 'Bachelor of Science in Telecommunications Engineering',
     institution: 'Universitat Pompeu Fabra',
     period: '2013 — 2017'
   }
@@ -90,7 +104,7 @@ export const education = [
 export const publications = [
   {
     title: 'Method and device for automatic classification of cataracts',
-    outlet: 'European Patent T23340EP09864PT'
+    outlet: 'European Patent No. 23191211.4'
   },
   {
     title:
@@ -101,11 +115,5 @@ export const publications = [
     title:
       'VerSe: A Vertebrae labelling and segmentation benchmark for multi-detector CT images',
     outlet: 'Medical Image Analysis, Volume 73, 2021'
-  },
-  {
-    title:
-      'Driver Response Couplings Between Networks in Chimera States',
-    outlet: 'XXXVII Dynamics Days Europe Book of Abstracts (2017)'
   }
 ];
-

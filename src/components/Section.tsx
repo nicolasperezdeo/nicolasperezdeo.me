@@ -11,8 +11,9 @@ interface SectionProps {
 export function Section({ id, title, eyebrow, children, action }: SectionProps) {
   return (
     <section id={id} className="relative py-20">
-      <div className="absolute inset-0 -z-10 bg-grid-light bg-grid-size opacity-40" aria-hidden="true" />
-      <div className="relative mx-auto max-w-5xl px-6">
+      {/* faint background pattern */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-slate-900/60 via-slate-950/60 to-black/80 backdrop-blur-2xl" aria-hidden="true" />
+      <div className="relative mx-auto max-w-5xl px-6 glass rounded-3xl p-8">
         <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             {eyebrow && (
