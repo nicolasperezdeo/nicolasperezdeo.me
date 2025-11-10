@@ -4,18 +4,19 @@ export function Languages() {
   return (
     <Section id="languages" title="Languages" eyebrow="Communication">
       <ul className="grid gap-4 sm:grid-cols-3">
-        <li className="glass rounded-2xl p-6 text-center">
-          <p className="text-lg font-semibold text-white">English</p>
-          <p className="text-sm text-slate-400">C2 — Full professional</p>
-        </li>
-        <li className="glass rounded-2xl p-6 text-center">
-          <p className="text-lg font-semibold text-white">German</p>
-          <p className="text-sm text-slate-400">B2/C1 — Advanced</p>
-        </li>
-        <li className="glass rounded-2xl p-6 text-center">
-          <p className="text-lg font-semibold text-white">Spanish</p>
-          <p className="text-sm text-slate-400">Native</p>
-        </li>
+        {[
+          { name: 'English', level: 'C2 — Full professional' },
+          { name: 'German', level: 'B2/C1 — Advanced' },
+          { name: 'Spanish', level: 'Native' },
+        ].map((lang) => (
+          <li
+            key={lang.name}
+            className="rounded-2xl border border-[#FBF4BD]/60 bg-white/40 backdrop-blur-md p-6 text-center shadow-sm shadow-black/10"
+          >
+            <p className="text-lg font-semibold text-black">{lang.name}</p>
+            <p className="text-sm text-neutral-700">{lang.level}</p>
+          </li>
+        ))}
       </ul>
     </Section>
   );

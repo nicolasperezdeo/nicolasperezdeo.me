@@ -2,31 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -------- Base -------- */
 body {
-  @apply antialiased bg-slate-950 text-slate-100 font-sans;
-  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 0%, rgba(10,10,15,1) 100%);
-  backdrop-filter: blur(20px);
+  @apply antialiased text-neutral-900 font-sans;
+  background-color: #F5F1E9;
 }
 
 /* Selection + links */
 ::selection {
-  @apply bg-accent/70 text-slate-950;
+  background-color: #FBF4BD;
+  color: #000;
 }
 
 a {
-  @apply text-primary transition-colors duration-200;
+  @apply transition-colors duration-200;
+  color: #000;
 }
 
 a:hover {
-  @apply text-accent;
+  color: #555;
 }
 
-/* Glass utility */
+/* -------- Glass Utility -------- */
 .glass {
-  @apply bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(31,38,135,0.2)];
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
 
-/* Soft animations */
+/* Optional text smoothing */
 .fade-in {
   @apply transition-opacity duration-700 ease-out;
 }

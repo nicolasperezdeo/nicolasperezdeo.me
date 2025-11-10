@@ -12,9 +12,9 @@ export function ContactLink({ href, icon, label }: ContactLinkProps) {
       href={href}
       target={href.startsWith('http') ? '_blank' : undefined}
       rel={href.startsWith('http') ? 'noreferrer' : undefined}
-      className="group flex items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/60 px-5 py-4 text-sm font-medium text-slate-200 transition hover:border-accent/80 hover:bg-slate-900"
+      className="group flex items-center gap-3 rounded-2xl border border-[#FBF4BD]/60 bg-white/60 backdrop-blur-md px-5 py-4 text-sm font-medium text-black shadow-sm transition-all hover:bg-[#FBF4BD]/70 hover:shadow-md"
     >
-      <span className="text-accent transition-transform duration-200 group-hover:scale-110">{icon}</span>
+      <span className="text-black/70 transition-transform duration-200 group-hover:scale-110">{icon}</span>
       <span>{label}</span>
     </a>
   );

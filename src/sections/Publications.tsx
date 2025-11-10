@@ -6,9 +6,12 @@ export function Publications() {
     <Section id="publications" title="Publications & Patents" eyebrow="Thought Leadership">
       <ul className="space-y-6">
         {publications.map((item) => (
-          <li key={item.title} className="rounded-3xl border border-slate-800/60 bg-slate-900/40 p-6 shadow-sm shadow-slate-950/40">
-            <p className="text-lg font-medium text-white">{item.title}</p>
-            <p className="mt-2 text-sm text-slate-400">{item.outlet}</p>
+          <li
+            key={item.title}
+            className="rounded-3xl border border-[#FBF4BD]/60 bg-white/40 backdrop-blur-md p-6 shadow-sm shadow-black/10 transition-transform hover:scale-[1.01]"
+          >
+            <p className="text-lg font-medium text-black">{item.title}</p>
+            <p className="mt-2 text-sm text-neutral-700">{item.outlet}</p>
           </li>
         ))}
       </ul>
