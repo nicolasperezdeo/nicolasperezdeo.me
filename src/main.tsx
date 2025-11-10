@@ -7,11 +7,10 @@ const basename = process.env.PUBLIC_URL;
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-      <BrowserRouter basename={basename}>
-
+    <BrowserRouter basename={basename}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
-            </BrowserRouter>
+    </BrowserRouter>
 
 );
