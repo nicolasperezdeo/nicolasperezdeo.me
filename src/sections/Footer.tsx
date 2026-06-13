@@ -14,13 +14,13 @@ export function Footer() {
       <div className="absolute inset-x-0 -top-16 h-16 bg-gradient-to-t from-slate-950/90 to-transparent" aria-hidden="true" />
       <div className="relative mx-auto flex max-w-5xl flex-col gap-6 px-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
         <p>© {new Date().getFullYear()} {profile.name}. Built with React, Vite & Tailwind.</p>
-        <nav className="flex flex-wrap items-center gap-4">
+        <nav className="flex flex-wrap items-center gap-4" aria-label="Footer links">
           {footerLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target={link.href.startsWith('http') ? '_blank' : undefined}
-              rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
+              rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               className="inline-flex items-center gap-2 text-slate-300 transition hover:text-accent"
             >
               <span className="text-accent">{link.icon}</span>

@@ -61,6 +61,8 @@ export function Hero() {
                 <img
                   src="https://ghchart.rshah.org/6688A2/nicolasperezdeo"
                   alt="GitHub Contribution Graph"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full"
                   style={{ imageRendering: 'crisp-edges' }}
                 />
@@ -87,6 +89,9 @@ export function Hero() {
               <img
                 src="/assets/img/Nico_website.png"
                 alt="Nicolas Perez de Olaguer"
+                width="96"
+                height="96"
+                decoding="async"
                 className="h-24 w-24 rounded-full border-2 border-[#FBF4BD]/60 shadow-md"
               />
             </motion.div>
