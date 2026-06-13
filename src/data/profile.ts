@@ -7,7 +7,7 @@ export const profile = {
   linkedin: 'https://linkedin.com/in/nicolasperezdeolaguer',
   github: 'https://github.com/nicolasperezdeo',
   summary:
-    'Senior Machine Learning Engineer with over five years of experience designing, deploying, and maintaining production-grade AI systems. Skilled in building scalable LLM and ML pipelines on AWS using Docker, Terraform, and MLflow. Currently focused on applied Generative AI and MLOps, integrating language and vision models into business workflows to deliver measurable value.',
+    'Senior Machine Learning Engineer with over five years of experience designing, deploying, and maintaining production-grade AI systems. Skilled in building reliable ML pipelines, MLOps infrastructure, and reproducible workflows across AWS and GCP. Currently focused on production ML systems, workflow automation, and applied AI that delivers measurable value.',
   keywords: [
     'MLOps',
     'Generative AI',
@@ -30,11 +30,11 @@ export const skills = [
   },
   {
     category: 'MLOps & Infrastructure',
-    items: ['Docker', 'Terraform', 'MLflow', 'CI/CD', 'Model Monitoring']
+    items: ['Docker', 'Terraform', 'MLflow', 'GitHub Actions', 'uv', 'DVC', 'CI/CD', 'Model Monitoring']
   },
   {
     category: 'Cloud & Services',
-    items: ['AWS (SageMaker, Bedrock, EC2, Lambda, CloudWatch)']
+    items: ['AWS (SageMaker, Bedrock, EC2, Lambda, CloudWatch)', 'Google Cloud Platform', 'Kubeflow Pipelines']
   },
   {
     category: 'Focus Areas',
@@ -43,6 +43,28 @@ export const skills = [
 ];
 
 export const experiences = [
+  {
+    role: 'Machine Learning Engineer',
+    company: 'KITRO',
+    location: 'Berlin · Remote',
+    period: 'Feb 2026 — Present',
+    highlights: [
+      'Develop and maintain Sherlock, KITRO’s internal AI pipeline for production ML workflows, with a focus on reliability, automation, and reproducibility.',
+      'Improved production pipeline performance, including reducing a core daily query from roughly 45 minutes to about 1 minute while preserving identical outputs.',
+      'Build CI/CD and scheduled workflows for training, dataset generation, production evaluation, dependency validation, GPU runner checks, and monthly curation.'
+    ]
+  },
+  {
+    role: 'Lead ML Engineer',
+    company: 'Seeda',
+    location: 'Berlin · Remote',
+    period: 'Nov 2025 — Feb 2026',
+    highlights: [
+      'Led development of Seeda’s centralized Marketing Mix Modeling platform, building the core repository from scratch into a reusable production-ready codebase.',
+      'Designed scalable ML workflows on Google Cloud Platform with Kubeflow Pipelines, Docker, CI/CD, and cloud-based model execution.',
+      'Partnered with product, data science, and business stakeholders to turn ad hoc analyses into standardized modeling, reporting, and experimentation workflows.'
+    ]
+  },
   {
     role: 'Machine Learning (Project Lead)',
     company: 'TeleMedC',
