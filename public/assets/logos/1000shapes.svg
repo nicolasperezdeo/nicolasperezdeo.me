@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" role="img" aria-labelledby="title">
+  <title id="title">1000Shapes</title>
+  <rect width="220" height="120" rx="22" fill="#ffffff"/>
+  <text x="18" y="58" fill="#111111" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="-1">1000</text>
+  <text x="20" y="90" fill="#111111" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="3">SHAPES</text>
+  <path d="M166 24h28v28h-28zM184 52h20v20h-20zM154 60h22v22h-22z" fill="#F6C545"/>
+</svg>

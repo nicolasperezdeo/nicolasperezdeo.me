@@ -46,6 +46,10 @@ export const experiences = [
   {
     role: 'Machine Learning Engineer',
     company: 'KITRO',
+    logo: {
+      src: '/assets/logos/kitro.svg',
+      alt: 'KITRO logo'
+    },
     location: 'Berlin · Remote',
     period: 'Feb 2026 — Present',
     highlights: [
@@ -57,6 +61,10 @@ export const experiences = [
   {
     role: 'Lead ML Engineer',
     company: 'Seeda',
+    logo: {
+      src: '/assets/logos/seeda.svg',
+      alt: 'Seeda logo'
+    },
     location: 'Berlin · Remote',
     period: 'Nov 2025 — Feb 2026',
     highlights: [
@@ -66,29 +74,43 @@ export const experiences = [
     ]
   },
   {
-    role: 'Machine Learning (Project Lead)',
+    role: 'TeleMedC',
     company: 'TeleMedC',
+    logo: {
+      src: '/assets/logos/telemedc.png',
+      alt: 'TeleMedC logo'
+    },
     location: 'Berlin / Hamburg',
-    period: 'May 2023 — Jan 2025',
-    highlights: [
-      'Led design and deployment of a scalable ML platform on AWS using Docker, MLflow, and Terraform.',
-      'Oversaw data workflows and production model rollouts across distributed teams, ensuring reliability and version control.',
-      'Mentored junior engineers and set standards for code quality, CI/CD, and experiment tracking.'
-    ]
-  },
-  {
-    role: 'Machine Learning Engineer',
-    company: 'TeleMedC',
-    location: 'Hamburg',
-    period: 'May 2021 — Apr 2023',
-    highlights: [
-      'Developed and deployed CNN-based image analysis systems with automated retraining pipelines on AWS SageMaker.',
-      'Built reproducible data ingestion, validation, and evaluation processes serving 10k+ samples.'
+    period: 'May 2021 — Jan 2025',
+    positions: [
+      {
+        role: 'Machine Learning (Project Lead)',
+        location: 'Berlin / Hamburg',
+        period: 'May 2023 — Jan 2025',
+        highlights: [
+          'Led design and deployment of a scalable ML platform on AWS using Docker, MLflow, and Terraform.',
+          'Oversaw data workflows and production model rollouts across distributed teams, ensuring reliability and version control.',
+          'Mentored junior engineers and set standards for code quality, CI/CD, and experiment tracking.'
+        ]
+      },
+      {
+        role: 'Machine Learning Engineer',
+        location: 'Hamburg',
+        period: 'May 2021 — Apr 2023',
+        highlights: [
+          'Developed and deployed CNN-based image analysis systems with automated retraining pipelines on AWS SageMaker.',
+          'Built reproducible data ingestion, validation, and evaluation processes serving 10k+ samples.'
+        ]
+      }
     ]
   },
   {
     role: 'Machine Learning Engineer',
     company: '1000Shapes',
+    logo: {
+      src: '/assets/logos/1000shapes.svg',
+      alt: '1000Shapes logo'
+    },
     location: 'Berlin',
     period: 'May 2019 — Aug 2020',
     highlights: [
